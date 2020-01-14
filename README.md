@@ -5,8 +5,8 @@ This is an intentionally ambitious project aimed to help push myself to learn ga
 
 I've already started working on some of the concepts outlined below and have uploaded a couple of videos to Youtube to demonstrate. The code used to show this working is hacked into a copy of the 32Blit project itself and so is not suitable to be shared at this time. I intend to pull the code out into *this* repository and continue development from there.
 
-[32Blit - Progress Update #1](https://www.youtube.com/watch?v=iS36iDcxn4E)
-[32Blit - Progress Update #2](https://www.youtube.com/watch?v=cCzTzIE_fMI)
+* [32Blit - Progress Update #1](https://www.youtube.com/watch?v=iS36iDcxn4E)
+* [32Blit - Progress Update #2](https://www.youtube.com/watch?v=cCzTzIE_fMI)
 
 ## Goals
 Create a some-what modular library of features, It should, in theory, be possible to add and remove features with little effort. There will be a number of core features that will exist inside of the core. I'll do my best to keep all other features outside and in stand-alone modules. Please note that the following lists are subject to change
