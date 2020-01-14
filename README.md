@@ -64,7 +64,7 @@ brew install dfu-util
 ```
 
 ## Getting Started
-After cloning this project to your machine, you will need to install the dependancies. These are managed using GIT submodules, so you can install them with the following command:
+After cloning this project to your machine, you will need to install the dependencies. These are managed using GIT submodules, so you can install them with the following command:
 
 ```
 git submodule update --init --recursive
@@ -84,7 +84,7 @@ make flash
 ```
 
 ## Dependancy Management
-At this moment in time, i'm not really sure what is the best way to manage dependancies within the C++ eco system. With that in mind, I am currently intending to pull in dependancies using GIT sub modules, it will allow for easy control over the version of external code used and is very easy to manage.
+At this moment in time, i'm not really sure what is the best way to manage dependencies within the C++ eco system. With that in mind, I am currently intending to pull in dependencies using GIT sub modules, it will allow for easy control over the version of external code used and is very easy to manage.
 
 ## Author
 I'm a professional programmer with experience in quite a few high level languages. Most recently i've been spending a lot of time in the Javascript world. I'm very new to C++ and as a result, there will be a lot of situations where I make mistakes. I am very open to help and guidance. If you spot an issue with my code, or feel that you could do a much better job. I encourage you to raise a pull request to let me know! Please :)
