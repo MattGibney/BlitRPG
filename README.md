@@ -83,7 +83,7 @@ Flash to 32Blit. Your device should be in DFU mode and connected via usb before 
 make flash
 ```
 
-## Dependancy Management
+## Dependency Management
 At this moment in time, i'm not really sure what is the best way to manage dependencies within the C++ eco system. With that in mind, I am currently intending to pull in dependencies using GIT sub modules, it will allow for easy control over the version of external code used and is very easy to manage.
 
 ## Author
