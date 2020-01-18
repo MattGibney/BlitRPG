@@ -1,45 +1,34 @@
 #include "rpg.hpp"
 
-#include "map.hpp"
+#include "maps/overworld.hpp"
 
 using namespace blit;
 
 /**
- * Instantiate BlitRPG::Map class instance. This should be called with the required data.
+ * Instantiate BlitRPG::Map class instance. This should be called with the 
+ * required data.
  * 
  * Perhaps JSON?
  */
-BlitRPG::Map overworld = BlitRPG::Map();
+BlitRPG::Overworld overworld = BlitRPG::Overworld();
 
-// Create Blit Map.
-Map *currentMap;
-
-spritesheet *tiles;
-
-void init() {
-  
-  currentMap = new Map(rect(0, 0, overworld.tile_width, overworld.tile_height));
-  
-  currentMap->add_layer("background", overworld.layers[0]);
-
-  tiles = spritesheet::load(environment_data);
-}
+void init() {}
 
 void render(uint32_t time_ms) {
   // Set Background
   fb.pen(rgba(0, 0, 0, 255)); // #000000
   fb.clear(); // Fill the screen with the current pen colour
 
-
-
   /**
    * Render Screen
-   * Rendering logic should be kept very separate from the game logic. Therefore, the below code will take in the BlitRPG::Map object as a param.
+   * TODO: Design rendering mechanish that allows the player to exist between
+   * layers, without there being a fixed set of layers.
    */
-  fb.sprites = tiles;
-  draw_layer(currentMap->layers["background"]);
-
-
+  fb.sprites = overworld.tilesheet;
+  draw_layer(overworld.currentMap->layers["background"]);
+  draw_layer(overworld.currentMap->layers["tree_bottoms"]);
+  draw_layer(overworld.currentMap->layers["tree_tops"]);
+  draw_layer(overworld.currentMap->layers["objects"]);
 }
 
 void update(uint32_t current_time) {}
